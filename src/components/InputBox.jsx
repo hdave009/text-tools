@@ -1,20 +1,21 @@
 import React from 'react';
 import { TextField } from '@mui/material';
 
-function InputBox({ text, onTextChange, disabled }) {
+// InputBox component
+function InputBox({ disabled, value, onChange }) {
   return (
     <TextField
-      sx={{ width: '100%', background: 'white', border: 'none', boxShadow: 1 }}
-      fullWidth
+      disabled={disabled}
       label="Enter Text"
       variant="outlined"
       multiline
       rows={10}
-      value={text}
-      onChange={(e) => onTextChange(e.target.value)}
-      disabled={disabled}
+      value={value}
+      onChange={onChange}
+      style={{ width: '45%' }}
     />
   );
 }
+
 
 export default InputBox;

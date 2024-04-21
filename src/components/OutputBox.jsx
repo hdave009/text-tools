@@ -1,11 +1,10 @@
 import React from 'react';
 import { TextField } from '@mui/material';
 
+// OutputBox component
 function OutputBox({ text }) {
   return (
     <TextField
-      sx={{ width: '100%', background: 'white', border: 'none', boxShadow: 1 }}
-      fullWidth
       label="Summarized Text"
       variant="outlined"
       multiline
@@ -14,6 +13,7 @@ function OutputBox({ text }) {
       InputProps={{
         readOnly: true,
       }}
+      style={{ width: '45%' }}
     />
   );
 }
