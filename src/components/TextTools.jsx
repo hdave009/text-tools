@@ -94,7 +94,7 @@ function TextSummarizer() {
   return (
     <Box style={{ padding: "20px", width: "100vw", boxSizing: "border-box" }}>
       <Box style={{ marginBottom: "20px", textAlign: "center" }}>
-        <Typography variant="h3">Text Summarizer</Typography>
+        <Typography variant="h1" fontFamily={"courier"}>Text Summarizer</Typography>
       </Box>
       <Box
         display="flex"
